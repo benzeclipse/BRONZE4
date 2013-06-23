@@ -1,0 +1,470 @@
+<!-- MIU
+ Term 1306
+ Banchop Ben Kangdouangnhot
+ Project 4 -->
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Ticket Hub</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True"/>
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on"/>
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+
+
+
+	<!-- First Page -->
+	<div data-role="page" id="home" data-filter="true">
+		
+		<div data-role="header" data-position="fixed" data-theme="b" >
+			<h1>Ticket Hub</h1>
+		</div>	
+			
+			<div data-role="content">		
+				<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+    				<li><a href="#shopTicket">Shop Ticket</a></li>
+    				<li><a href="#links">About us</a></li>
+    				<li><a href="#nba">NBA</a></li>
+    				<li><a href="#nfl">NFL</a></li>
+    				<li><a href="#mbl">MLB</a></li>
+				</ul>
+	
+				<div data-role="content">
+				<div>
+					<a href="#"> <!-- adding achor tags 'link' -->
+				<div><img src="images/jersey.jpeg" align="left"/>
+					<a href="#error" align="top"><p align="middle"> Today's specials!</p></a>
+			    </div>
+			</a>
+		</div>	
+	</div>	
+		</div>		
+			<ul data-role="listview" > <!-- List View and data-filter smart search-->
+			
+     <!-- 	<input type="text" name="text1" id="text1" >
+			<p><a href="#favorite" data-role="button" data-icon="search" data-iconpos="right" data-ajax="false" data-theme="d" >Search</a></p> -->
+			
+				<li data-role="list-divider">BROWSE NOW</li> <!-- Dividers -->
+				<li><a href="#shopTicket"><img src="images/nfl.jpeg"/><h3>Shop Now!	<!-- adding header and lower textview w/buttons-->
+				</h3></a>
+
+				<li><a href="#error"><h3>Sport Stuff</h3><p>Find all the greatest apparels</p>
+				<li><a href="#news"><h3>Sports News</h3><p>Up to the minute sports news</p></a></li>
+				
+					<li data-role="list-divider">Details</li> <!-- Dividers -->		
+						<div data-role="collapsible-set" data-corners="false" data-theme="c" data-content-theme="d">
+			
+ 						 <div data-role="collapsible">
+      					 	<h3>How it works</h3>
+       						<p>Place an order in and we can find your tickets within</p>
+       						<p>seconds!</p>
+   						</div>
+    		
+   					<div data-role="collapsible">
+    		  		  	<h3>FAQ</h3>  
+    		    		<div data-role="collapsible">
+    		   			<h3>POLICY</h3>
+      		   			<p>All items are subject to availability.</p>
+   				 </div>
+      		   
+      				<div data-role="collapsible">
+    		   		 	 <h3>Refunds</h3> 
+      		    		 <p>We accept all major credit cards and, checks,</p>
+      		   			 <p>and refunds can take up to 3 business days.</p>
+   			   	   </div>   
+   				</div>
+   			
+			</div>
+			
+		</ul> 
+			<br>
+ 			<p><a href="additem.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="b" >Sign up now!</a></p> <!-- data-role="button" to add a button -->
+ 			</br> 
+ 			
+  		 <div data-role="footer" data-position="bottom">
+      	 	<div data-role="navbar">
+         	   <ul>	  
+               	 <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+               	 <li><a href="#newsfeed" data-icon="info">Feeds</a></li>
+               	 <li><a href="#links" data-icon="gear">Info</a></li>
+           	   </ul>
+       		</div><!-- /navbar -->
+	   	</div><!-- /footer --> 
+</div>
+</div>
+
+		<!-- info -->   
+	<div data-role="page" id="info" data-id="displayingData" data-add-back-btn="true"> 
+		
+		<div data-role="header" data-position="fixed" data-theme="b" >
+			<h1>Ticket Hub</h1>
+		</div>
+		
+			<div data-role="content">		
+				<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+    				<li><a href="#shopTicket">Shop Ticket</a></li>
+    				<li><a href="#links">About us</a></li>
+    				<li><a href="#nba">NBA</a></li>
+    				<li><a href="#nfl">NFL</a></li>
+    				<li><a href="#mbl">MLB</a></li>
+				</ul>
+			</div>
+		
+			<div data-role="content" >
+				<h1><p align="middle">Contact Us</p></h1>
+			</div>
+				<p align="middle">We can be reach at</p><p align="center"><a href="#error">1-800-888-8888</a></p>
+				<p align="middle">or e-mail us at</p><p align="center"><a href="#error">ticketHub@hub.com</a></p>
+		 <div data-role="footer" data-position="fixed">
+      	 	<div data-role="navbar">
+         	   <ul>	  
+               	 <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+               	 <li><a href="#newsfeed" data-icon="info">Feeds</a></li>
+               	 <li><a href="#links" data-icon="gear">Info</a></li>
+           	   </ul>
+       		</div><!-- /navbar -->
+	   	</div><!-- /footer -->    
+</div>
+
+	
+	<!-- NFL ticket page -->   
+	<div data-role="page" id="nfl" data-id="displayingData" data-add-back-btn="true"> 
+		
+		<div data-role="header" data-position="fixed" data-theme="c" >
+			<h2>Ticket Hub</h2>
+		</div>
+		
+			<div data-role="content">		
+				<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+    				<li><a href="#shopTicket">Shop Ticket</a></li>
+    				<li><a href="#links">About us</a></li>
+    				<li><a href="#nba">NBA</a></li>
+    				<li><a href="#nfl">NFL</a></li>
+    				<li><a href="#mbl">MLB</a></li>
+				</ul>
+			</div>
+
+					<ul data-role="listview" > <!-- List View and data-filter smart search-->
+						<li data-role="list-divider" data-theme="a">BROWSE NOW</li> <!-- Dividers -->
+						<li><a href="#error">	<!-- adding header and lower textview w/buttons-->
+						<h3>NFL Tickets</h3>	 
+						</a></li>
+					</ul>
+						
+		 <div data-role="footer" data-position="fixed">
+      	 	<div data-role="navbar">
+         	   <ul>	  
+               	 <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+               	 <li><a href="#newsfeed" data-icon="info">Feeds</a></li>
+               	 <li><a href="#links" data-icon="gear">Info</a></li>
+           	   </ul>
+       		</div><!-- /navbar -->
+	   	</div><!-- /footer --> 
+</div>
+	
+
+	
+	<!-- NBA ticket page -->   
+	<div data-role="page" id="nba" data-id="displayingData" data-add-back-btn="true"> 
+		
+		<div data-role="header" data-position="fixed" data-theme="a" >
+			<h1>Ticket Hub</h1>
+		</div>
+		
+			<div data-role="content">		
+				<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+    				<li><a href="#shopTicket">Shop Ticket</a></li>
+    				<li><a href="#links">About us</a></li>
+    				<li><a href="#nba">NBA</a></li>
+    				<li><a href="#nfl">NFL</a></li>
+    				<li><a href="#mbl">MLB</a></li>
+				</ul>
+			</div>
+		
+				<ul data-role="listview" data-theme="a" > <!-- List View and data-filter smart search-->
+					<li data-role="content" data-theme="a">BROWSE NOW</li> <!-- Dividers -->
+					<li><a href="#error">	<!-- adding header and lower textview w/buttons-->
+					<h3>NBA Tickets</h3>	 
+					</a></li>
+				</ul>
+				
+  		 <div data-role="footer" data-position="fixed">
+      	 	<div data-role="navbar">
+         	   <ul>	  
+               	 <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+               	 <li><a href="#newsfeed" data-icon="info">Feeds</a></li>
+               	 <li><a href="#links" data-icon="gear">Info</a></li>
+           	   </ul>
+       		</div><!-- /navbar -->
+	   	</div><!-- /footer --> 
+			   
+	</div>
+	
+	
+	<!-- MBL ticket page -->   
+	<div data-role="page" id="mbl" data-id="displayingData" data-add-back-btn="true"> 
+		
+		<div data-role="header" data-position="fixed" data-theme="e" >
+			<h1>Ticket Hub</h1>
+		</div>
+		
+			<div data-role="content">
+				<h3 align="middle"><MLB Tickets!</p><h3>
+			</div>
+			
+				<div data-role="content">		
+					<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+    					<li><a href="#shopTicket">Shop Ticket</a></li>
+    					<li><a href="#links">About us</a></li>
+    					<li><a href="#nba">NBA</a></li>
+    					<li><a href="#nfl">NFL</a></li>
+    					<li><a href="#mbl">MLB</a></li>
+					</ul>
+				</div>
+				
+					<ul data-role="listview" data-theme="e"> <!-- List View and data-filter smart search-->
+						<li data-role="list-divider" data-theme="a">BROWSE NOW</li> <!-- Dividers -->
+						<li><a href="#error" >	<!-- adding header and lower textview w/buttons-->
+						<h3 >MLB Tickets</h3></a>
+						</li>
+					</ul>
+					
+		 <div data-role="footer" data-position="fixed">
+      	 	<div data-role="navbar">
+         	   <ul>	  
+               	 <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+               	 <li><a href="#newsfeed" data-icon="info">Feeds</a></li>
+               	 <li><a href="#links" data-icon="gear">Info</a></li>
+           	   </ul>
+       		</div><!-- /navbar -->
+	   	</div><!-- /footer -->   
+	</div>
+
+	
+	<!-- error page -->   
+	<div data-role="page" id="error" data-id="displayingData" data-add-back-btn="true"> 
+		
+		<div data-role="header" data-position="fixed" data-theme="b" >
+			<h1>Ticket Hub</h1>
+		</div>
+		
+			<div data-role="content">
+				<p>Sorry, an error has occur!</p>
+			</div>
+			
+				<div data-role="content">		
+					<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+    					<li><a href="#shopTicket">Shop Ticket</a></li>
+    					<li><a href="#links">About us</a></li>
+    					<li><a href="#nba">NBA</a></li>
+    					<li><a href="#nfl">NFL</a></li>
+    					<li><a href="#mbl">MLB</a></li>
+					</ul>
+				</div>
+					
+  		 <div data-role="footer" data-position="fixed">
+      	 	 <div data-role="navbar">
+         		 <ul>
+              	  
+               		 <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+               		 <li><a href="#newsfeed" data-icon="info">Feeds</a></li>
+               		 <li><a href="#links" data-icon="gear">Info</a></li>
+           		 </ul>
+       		 </div><!-- /navbar -->
+		</div><!-- /footer -->
+	</div>
+	
+	<!-- About Us -->   
+	<div data-role="page" id="links" data-add-back-btn="true" > 
+		
+		<div data-role="header" data-position="fixed" data-theme="b" >
+			<h1>Ticket Hub</h1>
+		</div>
+		
+			<div data-role="content">
+				<h2 align="middle"><p>Links to our resources</p></h2>
+			</div>	
+		
+				<div data-role="content">		
+					<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+    					<li><a href="#shopTicket">Shop Ticket</a></li>
+    					<li><a href="#links">About us</a></li>
+    					<li><a href="#nba">NBA</a></li>
+    					<li><a href="#nfl">NFL</a></li>
+    					<li><a href="#mbl">MLB</a></li>
+					</ul>
+				</div>
+	   	 <br>
+			 <ul data-role="listview" data-inset="true">
+   				<li><a href="http://benzeclipse.github.com/GOLD3">GOLD APP</a></li>
+   				<li><a href="http://benzeclipse.github.com/BRONZE3">BRONZE APP</a></li>
+   				<li><a href="https://github.com/benzeclipse/GOLD3.git">GIT gold link</a></li>
+   				<li><a href="https://github.com/benzeclipse/BRONZE3.git">GIT bronze link</a></li>
+   				<li><a href="#info">CONTACT US</a></li>
+			</ul>
+		</br>
+		 	<div data-role="footer" data-position="fixed">
+      			 <div data-role="navbar">
+      		<ul>  
+               	<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a>
+               	</li>
+               	<li><a href="#newsfeed" data-icon="info">Feeds</a>
+               	</li>
+               	<li><a href="#links" data-icon="gear">Info</a>
+               	</li>
+           	 </ul>
+       	 </div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+
+	<!--Sport News Link -->  
+	<div data-role="page" id="news" data-add-back-btn="true"> 		
+		<div data-role="header" data-position="fixed" data-theme="b" >
+			<h1>Ticket Hub</h1>
+		</div>	
+			<div data-role="content">
+				<p align="middle">All the lastet sports news!</p>
+			</div>
+				<div data-role="content">		
+					<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+    					<li><a href="#shopTicket">Shop Ticket</a></li>
+    					<li><a href="#links">About us</a></li>
+    					<li><a href="#nba">NBA</a></li>
+    					<li><a href="#nfl">NFL</a></li>
+    					<li><a href="#mbl">MLB</a></li>
+					</ul>
+				</div>
+				
+					<ul data-role="listview" data-inset="true">
+   						<li><a href="http://www.nfl.com">NFL</a></li>
+   						<li><a href="http://www.nba.com">NBA</a></li>
+   						<li><a href="http://mlb.mlb.com/home">MLB</a></li>
+   						<li><a href="#error">MORE!</a></li>
+					</ul>
+				
+  				 <div data-role="footer" data-position="fixed">
+      		  <div data-role="navbar">
+         	  	<ul>	  
+               		 <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+               		 <li><a href="#newsfeed" data-icon="info">Feeds</a></li>
+               	 	<li><a href="#links" data-icon="gear">Info</a></li>
+           		 </ul>
+       		 </div><!-- /navbar -->
+		</div><!-- /footer -->   
+	</div>
+
+
+	<!-- New Feed -->   
+	<div data-role="page" id="newsfeed" data-id="displayingData" data-add-back-btn="true" > 
+		<div data-role="header" data-position="fixed" data-theme="b" >
+			<h1>Ticket Hub</h1>
+		</div>
+			<div data-role="content">		
+				<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+    				<li><a href="#shopTicket">Shop Ticket</a></li>
+    				<li><a href="#links">About us</a></li>
+    				<li><a href="#nba">NBA</a></li>
+    				<li><a href="#nfl">NFL</a></li>
+    				<li><a href="#mbl">MLB</a></li>
+				</ul>
+			</div>
+		
+		<div data-role="fieldcontain">
+			<h1 align="middle">NEW FEEDS</h1>
+		</div>
+	
+			<ul>
+				<li><h3>Brandon Johnson</h3>
+					<p>Hello John!</p>
+					<p>1:03 p.m.</p>
+  				</li>
+  			
+					<li><h3>Brenda Jenny</h3>
+						<p>Really nice site!</p>
+						<p>11:55 a.m.</p>
+					</li>
+			</ul>	
+				 <ul>
+					<li><h3>John Doe</h3>
+						<p>Hello all!</p>
+						<p>11:34 a.m.</p>
+					</li>
+				</ul>
+					
+			<div data-role="footer" data-position="fixed">
+      	  <div data-role="navbar">
+         	  <ul>  
+               	 <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+               	 <li><a href="#newsfeed" data-icon="info">Feeds</a></li>
+               	 <li><a href="#links" data-icon="gear">Info</a></li>
+           	 </ul>
+       	 </div><!-- /navbar -->
+	</div><!-- /footer -->   
+</div>
+
+   <!--Shop Tickets -->  
+	<div data-role="page" id="shopTicket" data-add-back-btn="true"> 		
+		<div data-role="header" data-position="fixed" data-theme="b" >
+			<h1>Ticket Hub</h1>
+		</div>	
+			<div data-role="content">
+				<h1 align="middle"><p>Shop Tickets Now!</p><h1>
+			</div>
+		
+				<div data-role="content">		
+					<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+    					<li><a href="#shopTicket">Shop Ticket</a></li>
+    					<li><a href="#links">About us</a></li>
+    					<li><a href="#nba">NBA</a></li>
+    					<li><a href="#nfl">NFL</a></li>
+    					<li><a href="#mbl">MLB</a></li>
+					</ul>
+				</div>
+
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#nfl"  data-theme="c">NFL</a></li>
+					<li><a href="#nba"  data-theme="a">NBA</a></li>
+					<li><a href="#mbl"  data-theme="e">MBL</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		
+  		 <div data-role="footer" data-position="fixed">
+      	  <div data-role="navbar">
+         	   <ul>	  
+               	 <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+               	 <li><a href="#newsfeed" data-icon="info">Feeds</a></li>
+               	 <li><a href="#links" data-icon="gear">Info</a></li>
+           	 </ul>
+       	 </div><!-- /navbar -->
+	</div><!-- /footer -->   
+</div>
+
+</div>
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+
+</body>
+</html>
