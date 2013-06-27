@@ -1,3 +1,0 @@
-http://benzeclipse.github.com/BRONZE4
-
-https://github.com/benzeclipse/BRONZE4.git
